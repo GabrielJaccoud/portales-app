@@ -1,132 +1,221 @@
 # PORTALES - Arte como Portal Digital
 
-![PORTALES Logo](src/assets/LOGO.png)
+<div align="center">
+  <img src="src/assets/LOGO.png" alt="PORTALES Logo" width="120" height="120">
+  
+  <h3>Transforme sua arte em portais digitais</h3>
+  
+  [![CI/CD](https://github.com/GabrielJaccoud/portales-app/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/GabrielJaccoud/portales-app/actions/workflows/ci-cd.yml)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![React](https://img.shields.io/badge/React-19-blue.svg)](https://reactjs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-6.3-purple.svg)](https://vitejs.dev/)
+</div>
 
-## Descrição do Projeto
+## 🌟 Sobre o Projeto
 
-O **PORTALES** é um aplicativo inovador que atua como uma ponte entre a arte física e o mundo digital, utilizando inteligência artificial e realidade aumentada. Ele permite que artistas e criadores transformem suas obras de arte em "portais digitais" interativos, que podem ser explorados por outros usuários através de um scanner de realidade aumentada. A plataforma oferece uma experiência imersiva e "tech-mística", onde o físico e o digital se conectam de forma fluida e intuitiva.
+O PORTALES é uma plataforma inovadora que conecta arte física e digital através de realidade aumentada e inteligência artificial. Artistas podem criar "portais digitais" associados às suas obras físicas, que são descobertos por usuários através de um scanner de RA.
 
-### Funcionalidades Principais:
+### ✨ Funcionalidades Principais
 
-- **Modo Criador**: Artistas podem fazer upload de suas obras e associá-las a conteúdos digitais (vídeos, áudios, NFTs, websites), criando portais únicos.
-- **Modo Explorador**: Usuários podem escanear obras de arte físicas com a câmera do dispositivo para revelar os portais digitais ocultos e interagir com o conteúdo associado.
-- **Marketplace**: Um espaço para descobrir e adquirir obras de arte digitais e físicas, incluindo NFTs.
-- **Experiência Imersiva**: Design "tech-místico" com animações fluidas, partículas flutuantes e efeitos visuais que enriquecem a interação.
+- **🎨 Modo Criador**: Transforme suas obras de arte em portais digitais interativos
+- **🔍 Modo Explorador**: Use a câmera para descobrir portais ocultos em obras de arte
+- **🛒 Marketplace**: Descubra e explore portais criados por outros artistas
+- **👤 Perfil**: Gerencie seus portais e acompanhe suas interações
 
-## Tecnologias Utilizadas
+## 🚀 Demo
 
-O projeto PORTALES é construído com as seguintes tecnologias:
+🔗 **[Ver Demo ao Vivo](https://gabrieljaccoud.github.io/portales-app/)**
 
-- **Frontend**: React 19, React Native (para mobile), Vite (bundler), Tailwind CSS (estilização), Framer Motion (animações), React Router (navegação), React Query (gerenciamento de estado).
-- **Backend**: Node.js / Python (com Express.js ou Flask/Django).
-- **Banco de Dados**: PostgreSQL (relacional) e MongoDB (NoSQL).
-- **Armazenamento**: Amazon S3 (ou similar) para mídias.
-- **Autenticação**: JWT / OAuth 2.0.
-- **CI/CD**: GitHub Actions, Lighthouse CI.
+## 🛠️ Tecnologias
 
-## Estrutura de Pastas
+### Frontend
+- **React 19** - Framework principal
+- **Vite** - Build tool e dev server
+- **Tailwind CSS** - Framework CSS utilitário
+- **shadcn/ui** - Biblioteca de componentes
+- **Framer Motion** - Animações
+- **Lucide React** - Ícones
 
-```
-portales-app/
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml          # Pipeline CI/CD
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── assets/
-│   │   └── LOGO.png           # Logo do PORTALES
-│   ├── components/
-│   │   ├── ui/                # Componentes shadcn/ui
-│   │   ├── CosmicLoader.jsx   # Loader animado
-│   │   ├── FloatingParticles.jsx
-│   │   ├── Navigation.jsx     # Navegação bottom
-│   │   ├── PortalButton.jsx   # Botão customizado
-│   │   └── PortalCard.jsx     # Card de portal
-│   ├── hooks/
-│   ├── lib/
-│   │   └── utils.js
-│   ├── App.css               # Estilos personalizados
-│   ├── App.jsx               # Componente principal
-│   ├── index.css             # Estilos globais
-│   └── main.jsx              # Entry point
-├── .gitignore
-├── components.json           # Configuração shadcn/ui
-├── eslint.config.js
-├── index.html
-├── jsconfig.json
-├── lighthouserc.json         # Configuração Lighthouse CI
-├── package.json
-├── pnpm-lock.yaml
-└── vite.config.js
-```
+### DevOps & CI/CD
+- **GitHub Actions** - Pipeline CI/CD
+- **GitHub Pages** - Deploy automático
+- **Lighthouse CI** - Análise de performance
+- **ESLint** - Linting de código
 
-## Instalação e Execução Local
-
-Siga os passos abaixo para configurar e rodar o projeto em sua máquina local:
+## 📦 Instalação
 
 ### Pré-requisitos
-
-Certifique-se de ter o [Node.js](https://nodejs.org/en/) (versão 18.x ou superior) e o [pnpm](https://pnpm.io/installation) instalados.
-
-```bash
-# Instalar pnpm globalmente (se ainda não tiver)
-npm install -g pnpm
-```
+- Node.js 18+ 
+- pnpm (recomendado) ou npm
 
 ### Passos
 
-1.  **Clone o repositório** (ou extraia o arquivo do projeto):
-    ```bash
-    git clone https://github.com/GabrielJaccoud/portales-app.git
-    cd portales-app
-    ```
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/GabrielJaccoud/portales-app.git
+   cd portales-app
+   ```
 
-2.  **Instale as dependências**:
-    ```bash
-    pnpm install
-    ```
+2. **Instale as dependências**
+   ```bash
+   pnpm install
+   ```
 
-3.  **Inicie o servidor de desenvolvimento**:
-    ```bash
-    pnpm run dev
-    ```
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   pnpm run dev
+   ```
 
-    O aplicativo estará disponível em `http://localhost:5173/` (ou outra porta disponível).
+4. **Acesse a aplicação**
+   ```
+   http://localhost:5173
+   ```
 
-## Comandos Disponíveis
+## 📁 Estrutura do Projeto
 
-No diretório do projeto, você pode executar os seguintes comandos:
+```
+portales-app/
+├── src/
+│   ├── components/          # Componentes React
+│   │   ├── ui/             # Componentes base (shadcn/ui)
+│   │   ├── PortalButton.jsx
+│   │   ├── PortalCard.jsx
+│   │   ├── Navigation.jsx
+│   │   ├── CosmicLoader.jsx
+│   │   └── FloatingParticles.jsx
+│   ├── hooks/              # Hooks customizados
+│   ├── lib/                # Utilitários
+│   ├── assets/             # Imagens e recursos
+│   ├── App.jsx             # Componente principal
+│   ├── App.css             # Estilos customizados
+│   └── main.jsx            # Entry point
+├── docs/                   # Documentação
+│   ├── CONTRIBUTING.md
+│   ├── ARCHITECTURE.md
+│   └── TECHNICAL_SPEC.md
+├── .github/                # GitHub Actions
+│   └── workflows/
+│       └── ci-cd.yml
+├── public/                 # Arquivos públicos
+└── README.md
+```
 
-- `pnpm run dev`: Inicia o servidor de desenvolvimento.
-- `pnpm run build`: Compila o aplicativo para produção na pasta `dist/`.
-- `pnpm run lint`: Executa o linter para verificar problemas de código.
-- `pnpm run preview`: Serve o build de produção localmente para pré-visualização.
-- `pnpm run test`: Executa os testes (se configurados).
+## 🎨 Design System
 
-## Links Úteis
+### Paleta de Cores (Tech-Místico)
+- **Background**: `oklch(0.08 0.02 270)` - Azul escuro profundo
+- **Primary**: `oklch(0.65 0.25 270)` - Roxo vibrante
+- **Accent**: `oklch(0.75 0.20 45)` - Dourado místico
+- **Foreground**: `oklch(0.98 0.02 270)` - Branco azulado
 
-- [Documentação React](https://react.dev/)
-- [Documentação Vite](https://vitejs.dev/)
-- [Documentação Tailwind CSS](https://tailwindcss.com/docs)
-- [Documentação shadcn/ui](https://ui.shadcn.com/)
-- [Documentação Framer Motion](https://www.framer.com/motion/)
-- [Documentação Lucide React](https://lucide.dev/)
-- [Documentação pnpm](https://pnpm.io/)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Lighthouse CI Documentation](https://github.com/GoogleChrome/lighthouse-ci)
+### Efeitos Visuais
+- **Glassmorphism**: Efeitos de vidro com blur
+- **Partículas Flutuantes**: Animações cósmicas de fundo
+- **Gradientes**: Transições suaves entre cores
+- **Hover Effects**: Interações responsivas
 
-## Contribuição
+## 📜 Scripts Disponíveis
 
-Contribuições são bem-vindas! Por favor, siga as diretrizes de contribuição (a serem definidas) e o código de conduta.
+```bash
+# Desenvolvimento
+pnpm run dev          # Inicia servidor de desenvolvimento
+pnpm run dev --host   # Inicia com acesso externo
 
-## Licença
+# Build
+pnpm run build        # Gera build de produção
+pnpm run preview      # Preview do build
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+# Qualidade de Código
+pnpm run lint         # Executa ESLint
+pnpm run lint:fix     # Corrige problemas automaticamente
+
+# Deploy
+pnpm run deploy       # Deploy para GitHub Pages
+```
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Veja nosso [Guia de Contribuição](docs/CONTRIBUTING.md) para mais detalhes.
+
+### Processo Rápido
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'feat: Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📋 Roadmap
+
+### 🎯 Fase 1: MVP (2 semanas)
+- [x] Interface React básica
+- [x] Navegação entre telas
+- [x] Design system implementado
+- [ ] Autenticação simples
+- [ ] Upload de imagens
+
+### 🚀 Fase 2: Core Features (4 semanas)
+- [ ] Scanner de realidade aumentada
+- [ ] Backend com APIs
+- [ ] Integração com IA para reconhecimento
+- [ ] Sistema de portais funcionais
+
+### ⭐ Fase 3: Marketplace (3 semanas)
+- [ ] Descoberta de portais
+- [ ] Sistema de avaliações
+- [ ] Perfis de usuário
+- [ ] Features sociais
+
+### 🔥 Fase 4: Avançado (2 semanas)
+- [ ] Integração blockchain/NFT
+- [ ] Analytics avançados
+- [ ] App mobile (React Native)
+- [ ] Monetização
+
+## 📊 Performance
+
+### Métricas Alvo
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **First Input Delay**: < 100ms
+
+### Lighthouse Score
+- **Performance**: 90+
+- **Accessibility**: 95+
+- **Best Practices**: 90+
+- **SEO**: 90+
+
+## 📄 Documentação
+
+- 📖 [Guia de Contribuição](docs/CONTRIBUTING.md)
+- 🏗️ [Arquitetura do Sistema](docs/ARCHITECTURE.md)
+- 🔧 [Especificação Técnica](docs/TECHNICAL_SPEC.md)
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Equipe
+
+- **Gabriel Jaccoud** - *Desenvolvedor Principal* - [@GabrielJaccoud](https://github.com/GabrielJaccoud)
+
+## 🙏 Agradecimentos
+
+- [React](https://reactjs.org/) - Framework incrível
+- [Vite](https://vitejs.dev/) - Build tool super rápido
+- [Tailwind CSS](https://tailwindcss.com/) - CSS utilitário
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes lindos
+- [Lucide](https://lucide.dev/) - Ícones perfeitos
 
 ---
 
-**Desenvolvido por Manus AI**
-
-*Este README.md é um template. Sinta-se à vontade para expandi-lo com mais detalhes sobre o seu projeto, como diretrizes de contribuição, roadmap, etc.*
+<div align="center">
+  <p>Feito com ❤️ para conectar arte e tecnologia</p>
+  <p>
+    <a href="https://github.com/GabrielJaccoud/portales-app">⭐ Star no GitHub</a> •
+    <a href="https://github.com/GabrielJaccoud/portales-app/issues">🐛 Reportar Bug</a> •
+    <a href="https://github.com/GabrielJaccoud/portales-app/issues">💡 Sugerir Feature</a>
+  </p>
+</div>
 
