@@ -9,6 +9,11 @@ export default defineConfig({
   optimizeDeps: {
     include: ['@vercel/speed-insights/react'],
   },
+  build: {
+    rollupOptions: {
+      external: ['@vercel/speed-insights/react'],
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
