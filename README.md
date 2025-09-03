@@ -219,3 +219,25 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   </p>
 </div>
 
+
+
+
+## 🔮 Evolução Futura: Integração com Geração de Mundo
+
+Estamos planejando uma evolução significativa para o PORTALES, visando a integração com tecnologias avançadas de geração de mundo (inspiradas em modelos como o Genie-3 da Google DeepMind) e aprimorando a IA eAREAL. O objetivo é criar experiências de realidade aumentada ainda mais dinâmicas e personalizadas, onde os ambientes e interações se adaptam ao contexto e às escolhas do usuário.
+
+### Visão Geral:
+
+- **Mundos AR Dinâmicos:** Capacitar a eAREAL para gerar ou adaptar ambientes de RA em tempo real, respondendo a dados do usuário ou eventos específicos.
+- **Narrativas Adaptativas:** Permitir que a IA crie e modifique elementos visuais e interativos nos portais de RA, tornando cada experiência única e contextualizada.
+- **Personalização Profunda:** Aprofundar a conexão entre a arte digital e o estado do usuário, refletindo suas interações e progresso de forma visualmente impactante.
+
+### Próximos Passos (Fases Iniciais):
+
+1.  **Preparação do Backend:** Implementação de uma camada de abstração para futuras integrações com geradores de mundo, incluindo novas estruturas de dados para registrar ações de geração.
+2.  **Evolução da eAREAL:** Aprimoramento da lógica da eAREAL para identificar "gatilhos criativos" e formular prompts contextuais para os sistemas de geração de mundo.
+3.  **Prototipagem:** Desenvolvimento de protótipos iniciais para simular a geração de elementos de RA e validar o fluxo de dados.
+
+Esta iniciativa posicionará o PORTALES na vanguarda da interseção entre arte, realidade aumentada e inteligência artificial generativa, oferecendo uma plataforma verdadeiramente inovadora para artistas e exploradores.
+
+

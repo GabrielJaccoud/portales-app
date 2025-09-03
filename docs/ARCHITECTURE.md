@@ -224,3 +224,5 @@ Backend Services:
 
 Esta arquitetura foi projetada para ser escalável, mantível e performática, seguindo as melhores práticas de desenvolvimento React moderno.
 
+
+
